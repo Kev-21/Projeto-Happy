@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  color: white;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 18px/1 "Nunito", sans-serif;
+}
+
+
+
+
+
+
+
+/*O que é uma regra css?
+A maneira que priorizada na leitura de um css é você colocando-o como
+um atributo na tag em questão lá no HTML. Tem prioridade em cima de um arquivo externo.
+
+A função linear-gradient recebe 3 valores. 
+
+No caso abaixo o primeiro valor é o grau
+    que é como ele vai rotacionar o gradient.
+
+o segundo
+    a porcerntagem determina o nível de intensidade que a cor começa.
+
+o terceiro é como termina.
+
+min-height: altura mínima. vh é viewport height
+
+sans-serif significa fontes não serifadas, que seriam fontes sem "curvinhas".
+
+formas de agrupar instruções:
+font-weight: 400;
+    font-size:18px;
+    line-height: 1;
+    font-family: 'Nunito', sans-serif;
+Ou: 
+    font: 400 18px/1 'Nunito', sans-serif;
+}
+
+As unidades de media em e rem servem pra definir qual "caixa" o css vai usar como
+referência pra buscar um tamanho de fonte e converter para essa medida.
+Se o elemento filho usa em, essa medida vai buscar o tamanho de fonte do seu elemento pai.
+se o elemtno em questão usa rem(root element) ele vai buscar o tamanho de fonte na raiz de 
+todos, o HTML.
+Uma outra forma de fazer isso é:
+:root {
+    font-size: 16px;
+}
+Ou seja, em e rem podem ser consideradas "medidas variáveis", dando uma flexibilidade para o tamanho.
+
+.location, h1, .visit p{
+    Nesse caso o elemento p está contido no na classe visit, não está separado por vírgula, pois
+    existem vários elementos p no meu html e eu quero trabalhar com um específico.
+}
+
+Animações: 
+from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    isso cria uma transição do eixo Y de baixo para cima. 
+
+    animation-fill-mode: backwards serve para determinar que as animações e transições terminem nos
+    elementos aplicados.
+
+*/
